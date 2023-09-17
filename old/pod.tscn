@@ -1,14 +1,14 @@
 [gd_scene load_steps=7 format=3 uid="uid://dvoqfetysk5us"]
 
-[ext_resource type="Script" path="res://pod.gd" id="1_e5yhq"]
-[ext_resource type="Texture2D" uid="uid://dofwh0dk5tjus" path="res://ship.png" id="2_w6k7h"]
+[ext_resource type="Script" path="res://old/pod.gd" id="1_qshq3"]
+[ext_resource type="Texture2D" uid="uid://dofwh0dk5tjus" path="res://old/ship.png" id="2_qjrjf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q8q7e"]
-atlas = ExtResource("2_w6k7h")
+atlas = ExtResource("2_qjrjf")
 region = Rect2(32, 0, 16, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jxw6y"]
-atlas = ExtResource("2_w6k7h")
+atlas = ExtResource("2_qjrjf")
 region = Rect2(32, 24, 16, 24)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fu6iq"]
@@ -33,7 +33,7 @@ height = 10.0
 mass = 16.0
 continuous_cd = 2
 can_sleep = false
-script = ExtResource("1_e5yhq")
+script = ExtResource("1_qshq3")
 MaxThrust = 4096.0
 MaxTorque = 8192.0
 
