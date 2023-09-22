@@ -21,5 +21,5 @@ func _unhandled_input(event):
 func _integrate_forces(state):
 	if _throttle > 0 : apply_central_force(Vector2.UP.rotated(rotation) * MainThrustPower * _throttle)
 	if _strafe != 0: apply_central_force(Vector2.RIGHT.rotated(rotation) * StrafeThrustPower * _strafe)
-	if abs(rotation) > 0.01: apply_torque(-(rotation/PI) * (MainThrustPower + StrafeThrustPower) * RotationThrustMultiplier)
+	if abs(rotation) > 0.001: apply_torque(-(rotation/PI) * (MainThrustPower + StrafeThrustPower) * RotationThrustMultiplier)
 	

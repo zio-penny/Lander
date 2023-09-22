@@ -4,8 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cbj0h085v8t1b" path="res://lander/Lander.png" id="2_lv57l"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_50ax2"]
-radius = 8.0
-height = 32.0
+radius = 7.0
 
 [node name="Lander" type="RigidBody2D"]
 mass = 8.0

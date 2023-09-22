@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ymwuvvxtbvou"
-path="res://.godot/imported/Space Cave Tileset.png-09e0c9b003392aba5a7dff98804962c2.ctex"
+path="res://.godot/imported/Space Cave Tileset.png-fea9dae1e0b214995cc58ae1ec4b24a5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Space Cave Tileset.png"
-dest_files=["res://.godot/imported/Space Cave Tileset.png-09e0c9b003392aba5a7dff98804962c2.ctex"]
+source_file="res://textures/Space Cave Tileset.png"
+dest_files=["res://.godot/imported/Space Cave Tileset.png-fea9dae1e0b214995cc58ae1ec4b24a5.ctex"]
 
 [params]
 
