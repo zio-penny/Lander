@@ -1,7 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://dx4ttlvalnyng"]
+[gd_scene load_steps=5 format=3 uid="uid://dx4ttlvalnyng"]
 
 [ext_resource type="Script" path="res://lander/Lander.gd" id="1_o0w8h"]
 [ext_resource type="Texture2D" uid="uid://cbj0h085v8t1b" path="res://lander/Lander.png" id="2_lv57l"]
+
+[sub_resource type="Curve" id="Curve_cgwlq"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.3, 0.2), 0.0, 0.0, 0, 0, Vector2(1, 1), 3.16122, 0.0, 0, 0]
+point_count = 3
+metadata/_snap_enabled = true
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_50ax2"]
 radius = 7.0
@@ -12,7 +17,7 @@ max_contacts_reported = 4
 contact_monitor = true
 can_sleep = false
 script = ExtResource("1_o0w8h")
-RotationThrustMultiplier = 4.0
+PitchCurve = SubResource("Curve_cgwlq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
