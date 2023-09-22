@@ -7,10 +7,12 @@
 radius = 7.0
 
 [node name="Lander" type="RigidBody2D"]
-mass = 8.0
+mass = 16.0
+max_contacts_reported = 4
+contact_monitor = true
 can_sleep = false
 script = ExtResource("1_o0w8h")
-RotationThrustMultiplier = 8.0
+RotationThrustMultiplier = 4.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
