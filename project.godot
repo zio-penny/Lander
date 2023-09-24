@@ -70,7 +70,7 @@ PitchDown={
 
 [physics]
 
-2d/default_gravity=163.0
+2d/default_gravity=16.0
 
 [rendering]
 

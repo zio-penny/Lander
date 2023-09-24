@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbj0h085v8t1b"
-path="res://.godot/imported/Lander.png-d226a239dba0ec5d88f7092133049fdd.ctex"
+uid="uid://d27g1bxw5uj50"
+path="res://.godot/imported/starrySpace.jpg-aa1bf2ca15c25ad1a969e0abb1ed9d2b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://lander/Lander.png"
-dest_files=["res://.godot/imported/Lander.png-d226a239dba0ec5d88f7092133049fdd.ctex"]
+source_file="res://textures/starrySpace.jpg"
+dest_files=["res://.godot/imported/starrySpace.jpg-aa1bf2ca15c25ad1a969e0abb1ed9d2b.ctex"]
 
 [params]
 

@@ -5,8 +5,7 @@
 
 [node name="Main" type="Node"]
 
-[node name="LanderScene" parent="." node_paths=PackedStringArray("landingPads") instance=ExtResource("1_p7pdx")]
-landingPads = [NodePath("LandingPad"), null]
+[node name="LanderScene" parent="." instance=ExtResource("1_p7pdx")]
 
-[node name="GUI" type="Node" parent="."]
+[node name="GUI" type="Container" parent="."]
 script = ExtResource("2_1j1vv")
