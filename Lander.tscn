@@ -22,7 +22,8 @@ continuous_cd = 2
 max_contacts_reported = 4
 contact_monitor = true
 script = ExtResource("1_4phr4")
-RotationThrustMultiplier = 1.0
+RotationThrustMultiplier = 8.0
+RotationDamping = 0.001
 PitchCurve = SubResource("Curve_cgwlq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

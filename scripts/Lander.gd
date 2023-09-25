@@ -4,6 +4,7 @@ extends RigidBody2D
 @export var MainThrustPower: float = 3072
 @export var StrafeThrustPower: float = 512
 @export var RotationThrustMultiplier: float = 16
+@export var RotationDamping: float
 @export var PitchCurve: Curve
 
 var _throttle:float
@@ -38,9 +39,12 @@ func _integrate_forces(state):
 	apply_central_force(Vector2.UP.rotated(rotation) * MainThrustPower * _throttle)
 	apply_central_force(Vector2.RIGHT.rotated(rotation) * StrafeThrustPower * _strafe)
 	
-	var _targetRotation:float = _pitch * (PI / 2)
-	var _rotationDiff:float = _targetRotation - rotation
-	var _curveX:float = abs(_rotationDiff) / PI
+	var targetRotation:float = _pitch * (PI / 2)
+	var rotationDiff:float = targetRotation - rotation
+	var shortestAngle:float = fmod((rotationDiff + PI), (2 * PI)) - PI
+	print(shortestAngle)
+	var curveX:float = abs(rotationDiff) / PI
 	
 	# May need to reduce torque when angular velocity is too high
-	apply_torque(PitchCurve.sample(_curveX) * sign(_rotationDiff) * (MainThrustPower + StrafeThrustPower) * RotationThrustMultiplier)
+	# apply_torque(PitchCurve.sample(curveX) * sign(rotationDiff) * (MainThrustPower + StrafeThrustPower) * RotationThrustMultiplier)
+	apply_torque(shortestAngle * (MainThrustPower + StrafeThrustPower) * RotationThrustMultiplier - (angular_velocity * RotationDamping))
