@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://dl0jxcodmqwbf"]
 
-[ext_resource type="Script" path="res://LanderScene.gd" id="1_hr234"]
-[ext_resource type="TileSet" uid="uid://css184mi4jxs6" path="res://caveTiles.tres" id="2_4x64j"]
+[ext_resource type="Script" path="res://scripts/LanderScene.gd" id="1_hr234"]
+[ext_resource type="TileSet" uid="uid://css184mi4jxs6" path="res://textures/caveTiles.tres" id="2_4x64j"]
 [ext_resource type="Texture2D" uid="uid://ddsq0ge0ty25m" path="res://textures/preview-tiled background-space-by alpha rats.png" id="2_bckvs"]
-[ext_resource type="PackedScene" uid="uid://dx4ttlvalnyng" path="res://Lander.tscn" id="2_o1ix8"]
-[ext_resource type="Script" path="res://LandingPad.gd" id="3_y68k3"]
+[ext_resource type="PackedScene" uid="uid://dx4ttlvalnyng" path="res://scenes/Lander.tscn" id="2_o1ix8"]
+[ext_resource type="Script" path="res://scripts/LandingPad.gd" id="3_y68k3"]
 [ext_resource type="Texture2D" uid="uid://ymwuvvxtbvou" path="res://textures/Space Cave Tileset.png" id="4_42mx1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_10cvo"]
