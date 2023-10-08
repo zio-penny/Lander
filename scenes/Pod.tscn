@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dx4ttlvalnyng"]
 
-[ext_resource type="Script" path="res://scripts/Lander.gd" id="1_4phr4"]
+[ext_resource type="Script" path="res://scripts/Pod.gd" id="1_htjyx"]
 [ext_resource type="Texture2D" uid="uid://cbj0h085v8t1b" path="res://textures/Lander.png" id="2_wu0lr"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bkdgs"]
@@ -10,16 +10,16 @@ bounce = 0.17
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_50ax2"]
 radius = 7.0
 
-[node name="Lander" type="RigidBody2D"]
+[node name="Pod" type="RigidBody2D"]
 mass = 4.0
 physics_material_override = SubResource("PhysicsMaterial_bkdgs")
 continuous_cd = 2
 max_contacts_reported = 4
 contact_monitor = true
-script = ExtResource("1_4phr4")
-MainThrustPower = 2048.0
+can_sleep = false
+script = ExtResource("1_htjyx")
 ManuThrustPower = 256.0
-RotationThrustPower = 128.0
+RotationThrustPower = 256.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
