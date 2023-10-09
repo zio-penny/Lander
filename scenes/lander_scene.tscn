@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dl0jxcodmqwbf"]
+[gd_scene load_steps=9 format=3 uid="uid://dl0jxcodmqwbf"]
 
 [ext_resource type="Script" path="res://scripts/PodGameMode.gd" id="1_8kqsj"]
 [ext_resource type="TileSet" uid="uid://3nnnn53yfqgl" path="res://textures/caveTiles.tres" id="2_4x64j"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dx4ttlvalnyng" path="res://scenes/Pod.tscn" id="2_o1ix8"]
 [ext_resource type="Script" path="res://scripts/LandingPad.gd" id="3_y68k3"]
 [ext_resource type="Texture2D" uid="uid://ymwuvvxtbvou" path="res://textures/Space Cave Tileset.png" id="4_42mx1"]
+[ext_resource type="Script" path="res://scenes/CameraArmature.gd" id="7_c1fm6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_10cvo"]
 size = Vector2(77, 6)
@@ -225,18 +226,25 @@ offset = Vector2(8, 8)
 region_enabled = true
 region_rect = Rect2(96, 48, 16, 16)
 
-[node name="Lander" parent="." instance=ExtResource("2_o1ix8")]
+[node name="Pod" parent="." instance=ExtResource("2_o1ix8")]
 position = Vector2(-3712, -712)
 mass = 16.0
-MainThrustPower = 1024.0
 metadata/_edit_group_ = true
 
-[node name="PlayerCamera" type="Camera2D" parent="Lander"]
+[node name="CameraArmature" type="Node2D" parent="." node_paths=PackedStringArray("targetPod")]
+position = Vector2(-3712, -712)
+script = ExtResource("7_c1fm6")
+targetPod = NodePath("../Pod")
+CameraLeadingMax = 360
+
+[node name="PlayerCamera" type="Camera2D" parent="CameraArmature"]
 limit_left = -4063
 limit_top = -1730
 limit_right = 755
 limit_bottom = 335
-limit_smoothed = true
+position_smoothing_enabled = true
+position_smoothing_speed = 2.0
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
 editor_draw_limits = true
+editor_draw_drag_margin = true

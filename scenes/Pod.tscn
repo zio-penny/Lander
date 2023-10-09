@@ -16,10 +16,7 @@ physics_material_override = SubResource("PhysicsMaterial_bkdgs")
 continuous_cd = 2
 max_contacts_reported = 4
 contact_monitor = true
-can_sleep = false
 script = ExtResource("1_htjyx")
-ManuThrustPower = 256.0
-RotationThrustPower = 256.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
