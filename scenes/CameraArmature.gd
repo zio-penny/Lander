@@ -9,7 +9,7 @@ func _ready():
 	else: print("NO POD")
 		
 func updatePosition(globalPosition:Vector2, velocity:Vector2):
-	print("Update pos: ", globalPosition, " Update vel: ", velocity)
+	# print("Update pos: ", globalPosition, " Update vel: ", velocity)
 	if velocity.length() > CameraLeadingMax:
 		velocity = velocity.normalized() * CameraLeadingMax
 	global_position = globalPosition + velocity

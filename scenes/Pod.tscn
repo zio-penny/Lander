@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dx4ttlvalnyng"]
+[gd_scene load_steps=6 format=3 uid="uid://dx4ttlvalnyng"]
 
 [ext_resource type="Script" path="res://scripts/Pod.gd" id="1_htjyx"]
 [ext_resource type="Texture2D" uid="uid://cbj0h085v8t1b" path="res://textures/Lander.png" id="2_wu0lr"]
+[ext_resource type="Curve" uid="uid://cvt3vrgcu13a1" path="res://scenes/GroundEffectCurve.tres" id="2_yua1n"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bkdgs"]
 friction = 0.43
@@ -17,6 +18,9 @@ continuous_cd = 2
 max_contacts_reported = 4
 contact_monitor = true
 script = ExtResource("1_htjyx")
+MainThrustPower = 2400.0
+GroundEffectMultiplier = 6.0
+EffectCurve = ExtResource("2_yua1n")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
