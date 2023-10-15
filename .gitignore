@@ -1,3 +1,4 @@
 # Godot 4+ specific ignores
 .godot/
 devlog/
+*plan_bak*

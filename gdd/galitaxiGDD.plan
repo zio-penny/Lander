@@ -1,0 +1,329 @@
+{
+  "version": "0.8.0-alpha.8.1",
+  "pan": {
+    "X": -48,
+    "Y": -528
+  },
+  "zoom": 1.1112786531448364,
+  "currentPage": 0,
+  "properties": {
+    "CacheDirectory": ""
+  },
+  "pages": [
+    {
+      "id": 0,
+      "pan": {
+        "X": -47.999992,
+        "Y": -527.9999
+      },
+      "zoom": 1.1112786531448364,
+      "cards": [
+        {
+          "id": 19,
+          "rect": {
+            "X": -384,
+            "Y": -864,
+            "W": 512,
+            "H": 32
+          },
+          "collapsed": "CollapsedShade",
+          "uncollapsedSizeX": 512,
+          "uncollapsedSizeY": 64,
+          "contents": "Checkbox",
+          "properties": {
+            "checked": false,
+            "description": "Add Ground Effect to Other Thrusters",
+            "filepath": ""
+          }
+        },
+        {
+          "id": 20,
+          "rect": {
+            "X": -352,
+            "Y": -832,
+            "W": 288,
+            "H": 32
+          },
+          "collapsed": "CollapsedNone",
+          "uncollapsedSizeX": 288,
+          "uncollapsedSizeY": 32,
+          "contents": "Checkbox",
+          "properties": {
+            "checked": true,
+            "description": "Side Thrusters",
+            "filepath": ""
+          }
+        },
+        {
+          "id": 21,
+          "rect": {
+            "X": -352,
+            "Y": -800,
+            "W": 288,
+            "H": 32
+          },
+          "collapsed": "CollapsedNone",
+          "uncollapsedSizeX": 288,
+          "uncollapsedSizeY": 32,
+          "contents": "Checkbox",
+          "properties": {
+            "checked": false,
+            "description": "Rotation Thrusters",
+            "filepath": ""
+          }
+        },
+        {
+          "id": 22,
+          "rect": {
+            "X": -384,
+            "Y": -768,
+            "W": 448,
+            "H": 32
+          },
+          "collapsed": "CollapsedShade",
+          "uncollapsedSizeX": 448,
+          "uncollapsedSizeY": 64,
+          "contents": "Checkbox",
+          "properties": {
+            "checked": true,
+            "description": "Update Sprite to Show thrusters",
+            "filepath": ""
+          }
+        },
+        {
+          "id": 7,
+          "rect": {
+            "X": -672,
+            "Y": -416,
+            "W": 512,
+            "H": 160
+          },
+          "collapsed": "CollapsedNone",
+          "uncollapsedSizeX": 512,
+          "uncollapsedSizeY": 160,
+          "contents": "Note",
+          "properties": {
+            "description": "Galitaxi\nGalitaxi is a 2D physics-based, cyberpunk, sci-fantasy space vehicle simulator.\n",
+            "filepath": ""
+          }
+        },
+        {
+          "id": 0,
+          "rect": {
+            "X": -672,
+            "Y": -224,
+            "W": 256,
+            "H": 32
+          },
+          "collapsed": "CollapsedNone",
+          "uncollapsedSizeX": 256,
+          "uncollapsedSizeY": 32,
+          "contents": "Note",
+          "properties": {
+            "description": "Look and Feel",
+            "filepath": ""
+          }
+        },
+        {
+          "id": 8,
+          "rect": {
+            "X": -224,
+            "Y": -224,
+            "W": 192,
+            "H": 32
+          },
+          "collapsed": "CollapsedShade",
+          "uncollapsedSizeX": 192,
+          "uncollapsedSizeY": 32,
+          "contents": "Note",
+          "properties": {
+            "description": "Game Design",
+            "filepath": ""
+          }
+        },
+        {
+          "id": 5,
+          "rect": {
+            "X": -672,
+            "Y": -192,
+            "W": 96,
+            "H": 128
+          },
+          "collapsed": "CollapsedNone",
+          "uncollapsedSizeX": 96,
+          "uncollapsedSizeY": 128,
+          "contents": "Image",
+          "properties": {
+            "filepath": "img/Jetpac_CA.webp"
+          }
+        },
+        {
+          "id": 1,
+          "rect": {
+            "X": -576,
+            "Y": -192,
+            "W": 128,
+            "H": 128
+          },
+          "collapsed": "CollapsedNone",
+          "uncollapsedSizeX": 128,
+          "uncollapsedSizeY": 128,
+          "contents": "Image",
+          "properties": {
+            "filepath": "img/Gravitar2.png"
+          }
+        },
+        {
+          "id": 2,
+          "rect": {
+            "X": -448,
+            "Y": -192,
+            "W": 128,
+            "H": 128
+          },
+          "collapsed": "CollapsedNone",
+          "uncollapsedSizeX": 0,
+          "uncollapsedSizeY": 0,
+          "contents": "Image",
+          "properties": {
+            "filepath": "img/solarJetmanNes.jpg"
+          }
+        },
+        {
+          "id": 9,
+          "rect": {
+            "X": -192,
+            "Y": -192,
+            "W": 256,
+            "H": 32
+          },
+          "collapsed": "CollapsedNone",
+          "uncollapsedSizeX": 256,
+          "uncollapsedSizeY": 32,
+          "contents": "Note",
+          "properties": {
+            "description": "Inspirations",
+            "filepath": ""
+          }
+        },
+        {
+          "id": 13,
+          "rect": {
+            "X": -160,
+            "Y": -160,
+            "W": 320,
+            "H": 32
+          },
+          "collapsed": "CollapsedNone",
+          "uncollapsedSizeX": 320,
+          "uncollapsedSizeY": 32,
+          "contents": "Note",
+          "properties": {
+            "description": "Thrust / Solar Jetman",
+            "filepath": ""
+          }
+        },
+        {
+          "id": 12,
+          "rect": {
+            "X": -160,
+            "Y": -128,
+            "W": 256,
+            "H": 32
+          },
+          "collapsed": "CollapsedShade",
+          "uncollapsedSizeX": 256,
+          "uncollapsedSizeY": 32,
+          "contents": "Note",
+          "properties": {
+            "description": "Gravitar",
+            "filepath": ""
+          }
+        },
+        {
+          "id": 15,
+          "rect": {
+            "X": -160,
+            "Y": -96,
+            "W": 256,
+            "H": 32
+          },
+          "collapsed": "CollapsedNone",
+          "uncollapsedSizeX": 256,
+          "uncollapsedSizeY": 32,
+          "contents": "Note",
+          "properties": {
+            "description": "Lunar Jetman",
+            "filepath": ""
+          }
+        },
+        {
+          "id": 3,
+          "rect": {
+            "X": -672,
+            "Y": -64,
+            "W": 224,
+            "H": 160
+          },
+          "collapsed": "CollapsedNone",
+          "uncollapsedSizeX": 224,
+          "uncollapsedSizeY": 160,
+          "contents": "Image",
+          "properties": {
+            "filepath": "img/thrust.gif"
+          }
+        },
+        {
+          "id": 6,
+          "rect": {
+            "X": -448,
+            "Y": -64,
+            "W": 128,
+            "H": 96
+          },
+          "collapsed": "CollapsedNone",
+          "uncollapsedSizeX": 0,
+          "uncollapsedSizeY": 0,
+          "contents": "Image",
+          "properties": {
+            "filepath": "img/maejemison.jpg"
+          }
+        },
+        {
+          "id": 18,
+          "rect": {
+            "X": -160,
+            "Y": -64,
+            "W": 256,
+            "H": 32
+          },
+          "collapsed": "CollapsedNone",
+          "uncollapsedSizeX": 256,
+          "uncollapsedSizeY": 32,
+          "contents": "Note",
+          "properties": {
+            "description": "Space Taxi",
+            "filepath": ""
+          }
+        },
+        {
+          "id": 4,
+          "rect": {
+            "X": -448,
+            "Y": 32,
+            "W": 128,
+            "H": 96
+          },
+          "collapsed": "CollapsedNone",
+          "uncollapsedSizeX": 0,
+          "uncollapsedSizeY": 0,
+          "contents": "Image",
+          "properties": {
+            "filepath": "img/Lunar_Jetman_gameplay.png"
+          }
+        }
+      ]
+    }
+  ],
+  "savedimages": {}
+}
