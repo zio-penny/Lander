@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dx4ttlvalnyng"]
+[gd_scene load_steps=7 format=3 uid="uid://dx4ttlvalnyng"]
 
 [ext_resource type="Script" path="res://scripts/Pod.gd" id="1_htjyx"]
 [ext_resource type="Texture2D" uid="uid://cbj0h085v8t1b" path="res://textures/Lander.png" id="2_wu0lr"]
 [ext_resource type="Curve" uid="uid://cvt3vrgcu13a1" path="res://scenes/GroundEffectCurve.tres" id="2_yua1n"]
+[ext_resource type="Script" path="res://scenes/Thruster.gd" id="4_u305d"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bkdgs"]
 friction = 0.43
@@ -17,12 +18,9 @@ physics_material_override = SubResource("PhysicsMaterial_bkdgs")
 continuous_cd = 2
 max_contacts_reported = 4
 contact_monitor = true
+angular_damp = 0.75
 script = ExtResource("1_htjyx")
-ManuThrustPower = 1024.0
-RotationThrustPower = 1024.0
-RollMultiplier = 32
-GroundEffectMultiplier = 8.0
-EffectCurve = ExtResource("2_yua1n")
+RotationThrustPower = 3072.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -34,12 +32,30 @@ shape = SubResource("CapsuleShape2D_50ax2")
 
 [node name="MainThruster" type="Node2D" parent="."]
 position = Vector2(0, 6)
+rotation = 1.5708
+script = ExtResource("4_u305d")
+GroundEffectMultiplier = 2.0
+EffectCurve = ExtResource("2_yua1n")
 
 [node name="DownThruster" type="Node2D" parent="."]
 position = Vector2(0, -6)
-
-[node name="LeftThruster" type="Node2D" parent="."]
-position = Vector2(-14, 0)
+rotation = -1.5708
+script = ExtResource("4_u305d")
+ThrustPower = 512.0
+GroundEffectMultiplier = 2.0
+EffectCurve = ExtResource("2_yua1n")
 
 [node name="RightThruster" type="Node2D" parent="."]
+position = Vector2(-14, 0)
+rotation = 3.14159
+script = ExtResource("4_u305d")
+ThrustPower = 512.0
+GroundEffectMultiplier = 2.0
+EffectCurve = ExtResource("2_yua1n")
+
+[node name="LeftThruster" type="Node2D" parent="."]
 position = Vector2(14, 0)
+script = ExtResource("4_u305d")
+ThrustPower = 512.0
+GroundEffectMultiplier = 2.0
+EffectCurve = ExtResource("2_yua1n")

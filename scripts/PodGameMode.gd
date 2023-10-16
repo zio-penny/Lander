@@ -3,7 +3,7 @@ class_name PodGameMode extends Node2D
 ## and manages the mode's global settings
 
 ## Global gravity direction. Down = (0,1)
-@export var GravityVector:Vector2 = Vector2(0,1)
+@export var GravityVector:Vector2 = Vector2.DOWN
 ## Global gravity scale. Earth = 1000.0, Moon = 100.0
 @export var GravityScale:float = 100.0
  
